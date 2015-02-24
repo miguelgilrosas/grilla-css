@@ -25,3 +25,5 @@ Las columnas auxiliares miden lo que una columna de una fila de cuatro y sus pri
 Las columnas se pueden definir con cualquier etiqueta equivalente a un "div" (section, article, ...).
 
 Es responsabilidad del creador no introducir nada más en los contenedores que las columnas y que éstas estén ordenadas en su definición.
+
+NOTA: Sólo es necesario el archivo "grilla.css", el HTML es sólo un ejemplo de uso.
