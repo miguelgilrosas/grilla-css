@@ -9,12 +9,28 @@ body {
 	text-align: center;
 }
 
-.fila {
+/*Propiedades de las filas.*/
+.columnas1,
+.columnas2,
+.columnas3,
+.columnas4,
+.columnas6,
+.columnas12,
+.auxIzquierda,
+.auxDerecha {
 	overflow: hidden;
 	width: 100%;
 }
 
-.columna {
+/*Propiedades de las columnas*/
+.columnas1>*,
+.columnas2>*,
+.columnas3>*,
+.columnas4>*,
+.columnas6>*,
+.columnas12>*,
+.auxIzquierda>*,
+.auxDerecha>* {
 	background: #999;
 	box-sizing: border-box;
 	float: left;
@@ -24,90 +40,75 @@ body {
 }
 
 /*Una Columna*/
-.columnas1 .columna {
+.columnas1>* {
+	margin-right: 0;
 	width: 100%;
 }
 
-.columnas1 .columna:last-child {
-	margin-right: 0;
-}
-
 /*Dos Columnas*/
-.columnas2 .columna {
+.columnas2>* {
 	width: 49%;
 }
 
-.columnas2 .columna:last-child {
+.columnas2>*:last-child {
 	margin-right: 0;
 }
 
 /*Tres Columnas*/
-.columnas3 .columna {
+.columnas3>* {
 	width: 32%;
 }
 
-.columnas3 .columna:last-child {
+.columnas3>*:last-child {
 	margin-right: 0;
 }
 
 /*Cuatro Columnas*/
-.columnas4 .columna {
+.columnas4>* {
 	width: 23.5%;
 }
 
-.columnas4 .columna:last-child {
+.columnas4>*:last-child {
 	margin-right: 0;
 }
 
 /*Seis Columnas*/
-.columnas6 .columna {
+.columnas6>* {
 	width: 15%;
 }
 
-.columnas6 .columna:last-child {
+.columnas6>*:last-child {
 	margin-right: 0;
 }
 
 /*Doce Columnas*/
-.columnas12 .columna {
+.columnas12>* {
 	width: 6.5%;
 }
 
-.columnas12 .columna:last-child {
+.columnas12>*:last-child {
 	margin-right: 0;
 }
 
 /*Columna Auxiliar a la Izquierda*/
-.auxIzquierda .columna {
+.auxIzquierda>* {
 	width: 75%;
 }
 
-.auxIzquierda .columna.auxiliar {
+.auxIzquierda>*:first-child {
 	width: 23%;
 }
 
-.auxIzquierda .columna:last-child {
+.auxIzquierda>*:last-child {
 	margin-right: 0;
 }
 
 /*Columna Auxiliar a la Derecha*/
-.auxDerecha .columna {
+.auxDerecha>* {
 	width: 75%;
 }
 
-.auxDerecha .columna.auxiliar {
-	width: 23%;
-}
-
-.auxDerecha .columna:last-child {
+.auxDerecha>*:last-child {
 	margin-right: 0;
-}
-
-/* Contenido */
-.columna:after {
-	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem asperiores tenetur repellendus, fugit debitis rerum accusamus, possimus deserunt cumque?";
-}
-
-.columna {
-	word-break: break-all;
+	width: 23%;
 }
