@@ -3,21 +3,22 @@ grilla-css
 Define una estructura muy simple de creación de columnas. Sólo hay que enmarcarlas en un contenedor y asignarle una clase a éste.
 
 Las clases posibles  son:
-columnas1		Define una sola columna.
 
-columnas2		Define dos columnas.
+"columnas1": Define una sola columna.
 
-columnas3		Define 3 columnas.
+"columnas2": Define dos columnas.
 
-columnas4		Define 4 columnas.
+"columnas3": Define 3 columnas.
 
-columnas6		Define 6 columnas.
+"columnas4": Define 4 columnas.
 
-columnas12		Define 12 columnas.
+"columnas6": Define 6 columnas.
 
-auxIzquierda	Define una columna auxiliar a la izquierda de una principal.
+"columnas12": Define 12 columnas.
 
-auxDerecha		Define una columna principal y una auxiliar a su derecha.
+"auxIzquierda": Define una columna auxiliar a la izquierda de una principal.
+
+"auxDerecha": Define una columna principal y una auxiliar a su derecha.
 
 Las columnas auxiliares miden lo que una columna de una fila de cuatro y sus principales miden tres.
 
