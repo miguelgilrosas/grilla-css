@@ -1,0 +1,113 @@
+/*Generales*/
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ddd;
+	text-align: center;
+}
+
+.fila {
+	overflow: hidden;
+	width: 100%;
+}
+
+.columna {
+	background: #999;
+	box-sizing: border-box;
+	float: left;
+	font-size: 2em;
+	margin: 0 2% 2% 0;
+	padding: 0.5em;
+}
+
+/*Una Columna*/
+.columnas1 .columna {
+	width: 100%;
+}
+
+.columnas1 .columna:last-child {
+	margin-right: 0;
+}
+
+/*Dos Columnas*/
+.columnas2 .columna {
+	width: 49%;
+}
+
+.columnas2 .columna:last-child {
+	margin-right: 0;
+}
+
+/*Tres Columnas*/
+.columnas3 .columna {
+	width: 32%;
+}
+
+.columnas3 .columna:last-child {
+	margin-right: 0;
+}
+
+/*Cuatro Columnas*/
+.columnas4 .columna {
+	width: 23.5%;
+}
+
+.columnas4 .columna:last-child {
+	margin-right: 0;
+}
+
+/*Seis Columnas*/
+.columnas6 .columna {
+	width: 15%;
+}
+
+.columnas6 .columna:last-child {
+	margin-right: 0;
+}
+
+/*Doce Columnas*/
+.columnas12 .columna {
+	width: 6.5%;
+}
+
+.columnas12 .columna:last-child {
+	margin-right: 0;
+}
+
+/*Columna Auxiliar a la Izquierda*/
+.auxIzquierda .columna {
+	width: 75%;
+}
+
+.auxIzquierda .columna.auxiliar {
+	width: 23%;
+}
+
+.auxIzquierda .columna:last-child {
+	margin-right: 0;
+}
+
+/*Columna Auxiliar a la Derecha*/
+.auxDerecha .columna {
+	width: 75%;
+}
+
+.auxDerecha .columna.auxiliar {
+	width: 23%;
+}
+
+.auxDerecha .columna:last-child {
+	margin-right: 0;
+}
+
+/* Contenido */
+.columna:after {
+	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem asperiores tenetur repellendus, fugit debitis rerum accusamus, possimus deserunt cumque?";
+}
+
+.columna {
+	word-break: break-all;
+}
