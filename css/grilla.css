@@ -1,12 +1,45 @@
+/*Generales Modificables.*/
+body {
+	background: #ddd;
+	text-align: center;
+}
+
+/*De fila modificables*/
+.columnas1,
+.columnas2,
+.columnas3,
+.columnas4,
+.columnas6,
+.columnas12,
+.auxIzquierda,
+.auxDerecha {
+}
+
+/*De columna modificables*/
+.columnas1>*,
+.columnas2>*,
+.columnas3>*,
+.columnas4>*,
+.columnas6>*,
+.columnas12>*,
+.auxIzquierda>*,
+.auxDerecha>* {
+	background: #999;
+	font-size: 2em;
+	margin-bottom: 2%;
+	margin-left: 0;
+	margin-top: 0;
+	/*NO MODIFICAR margin-right*/
+	padding: 0.5em;
+}
+
+
+/*NO MODIFICAR MÁS ABAJO*/
+
 /*Generales*/
 body, html {
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	background: #ddd;
-	text-align: center;
 }
 
 /*Propiedades de las filas.*/
@@ -31,12 +64,9 @@ body {
 .columnas12>*,
 .auxIzquierda>*,
 .auxDerecha>* {
-	background: #999;
 	box-sizing: border-box;
 	float: left;
-	font-size: 2em;
-	margin: 0 2% 2% 0;
-	padding: 0.5em;
+	margin-right: 2%;
 }
 
 /*Una Columna*/
