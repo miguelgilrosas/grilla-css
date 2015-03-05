@@ -142,7 +142,7 @@ body, html {
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) { /* 1, 2, 3, 4 y 6 columnas.*/
 	.columnas6>*:nth-child(n),
 	.columnas12>*:nth-child(n) {
 		margin-right: 2%;
@@ -175,7 +175,7 @@ body, html {
 	}
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) { /* 1, 2, 3, 4, 6 y 12 columnas.*/
 	.columnas12>*:nth-child(n) {
 		width: 6.5%;
 		margin-right: 2%;
