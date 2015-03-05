@@ -1,6 +1,12 @@
+
+
+/*MAL MAL en >=768 se debería poner 4 col
+*/
 /*Generales Modificables.*/
 body {
 	background: #ddd;
+	font-size: 16px;
+	font-family: sans-serif;
 	text-align: center;
 }
 
@@ -55,90 +61,126 @@ body, html {
 	width: 100%;
 }
 
-/*Propiedades de las columnas*/
-.columnas1>*,
-.columnas2>*,
-.columnas3>*,
-.columnas4>*,
-.columnas6>*,
-.columnas12>*,
-.auxIzquierda>*,
-.auxDerecha>* {
-	box-sizing: border-box;
-	float: left;
-	margin-right: 2%;
+@media screen and (min-width: 480px) { /*1 y 2 columnas.*/
+	.columnas1>*,
+	.columnas2>*,
+	.columnas3>*,
+	.columnas4>*,
+	.columnas6>*,
+	.columnas12>*,
+	.auxIzquierda>*,
+	.auxDerecha>* {
+		box-sizing: border-box;
+		float: left;
+		margin-right: 2%;
+	}
+
+	.columnas1>* {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.columnas2>*,
+	.columnas3>*,
+	.columnas4>*,
+	.columnas6>*,
+	.columnas12>*,
+	.auxIzquierda>*,
+	.auxDerecha>* {
+		width: 49%;
+	}
+
+	.columnas3>*:last-child {
+		width: 100%;
+	}
+
+	.columnas2>*:nth-child(2n),
+	.columnas3>*:nth-child(2n),
+	.columnas4>*:nth-child(2n),
+	.columnas6>*:nth-child(2n),
+	.columnas12>*:nth-child(2n),
+	.auxIzquierda>*:nth-child(2n),
+	.auxDerecha>*:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	columnas3>*:last-child {
+		margin-right: 0;
+	}
 }
 
-/*Una Columna*/
-.columnas1>* {
-	margin-right: 0;
-	width: 100%;
+@media screen and (min-width: 768px) { /*1, 2, 3 y 4 columnas.*/
+	.columnas4>*:nth-child(n),
+	.columnas12>*:nth-child(n) {
+		width: 23.5%;
+		margin-right: 2%;
+	}
+
+
+	.columnas3>*:nth-child(n),
+	.columnas6>*:nth-child(n),
+	.auxIzquierda>*:first-child,
+	.auxDerecha>*:last-child {
+		margin-right: 2%;
+		width: 32%;
+	}
+
+	.columnas2>*:last-child,
+	.columnas3>*:last-child,
+	.columnas4>*:last-child,
+	.columnas6>*:nth-child(3n),
+	.columnas12>*:nth-child(4n),
+	.auxIzquierda>*:last-child,
+	.auxDerecha>*:last-child {
+		margin-right: 0;
+	}
+
+	.auxIzquierda>*:last-child,
+	.auxDerecha>*:first-child {
+		width: 66%;
+	}
 }
 
-/*Dos Columnas*/
-.columnas2>* {
-	width: 49%;
+@media screen and (min-width: 1024px) {
+	.columnas6>*:nth-child(n),
+	.columnas12>*:nth-child(n) {
+		margin-right: 2%;
+		width: 15%;
+	}
+
+	.columnas6>*:nth-child(6n),
+	.columnas12>*:nth-child(6n) {
+		margin-right: 0;
+	}
+
+	.auxIzquierda>*:first-child,
+	.auxDerecha>*:last-child {
+		width: 23.5%;
+	}
+
+	.auxIzquierda>*:last-child,
+	.auxDerecha>*:first-child {
+		width: 74.5%;
+	}
+
+	.auxIzquierda>*:first-child,
+	.auxDerecha>*:first-child {
+		margin-right: 2%;
+	}
+
+	.auxIzquierda>*:last-child,
+	.auxDerecha>*:last-child {
+		margin-right: 0%;
+	}
 }
 
-.columnas2>*:last-child {
-	margin-right: 0;
-}
+@media screen and (min-width: 1440px) {
+	.columnas12>*:nth-child(n) {
+		width: 6.5%;
+		margin-right: 2%;
+	}
 
-/*Tres Columnas*/
-.columnas3>* {
-	width: 32%;
-}
-
-.columnas3>*:last-child {
-	margin-right: 0;
-}
-
-/*Cuatro Columnas*/
-.columnas4>* {
-	width: 23.5%;
-}
-
-.columnas4>*:last-child {
-	margin-right: 0;
-}
-
-/*Seis Columnas*/
-.columnas6>* {
-	width: 15%;
-}
-
-.columnas6>*:last-child {
-	margin-right: 0;
-}
-
-/*Doce Columnas*/
-.columnas12>* {
-	width: 6.5%;
-}
-
-.columnas12>*:last-child {
-	margin-right: 0;
-}
-
-/*Columna Auxiliar a la Izquierda*/
-.auxIzquierda>* {
-	width: 75%;
-}
-
-.auxIzquierda>*:first-child {
-	width: 23%;
-}
-
-.auxIzquierda>*:last-child {
-	margin-right: 0;
-}
-
-/*Columna Auxiliar a la Derecha*/
-.auxDerecha>* {
-	width: 75%;
-}
-
-.auxDerecha>*:last-child {
-	margin-right: 0;
-	width: 23%;
+	.columnas12>*:last-child {
+		margin-right: 0;
+	}
 }
